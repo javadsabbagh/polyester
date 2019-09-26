@@ -28,7 +28,8 @@ repositories {
 
 dependencies {
     compile 'com.jfoenix:jfoenix:9.0.9'
-    compile group: 'com.fifesoft', name: 'rsyntaxtextarea', version: '3.0.3'
+    compile 'com.fifesoft:rsyntaxtextarea:3.0.3'
+    compile 'org.codehaus.groovy:groovy:2.5.8'
 
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.5.2'
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.5.2'
