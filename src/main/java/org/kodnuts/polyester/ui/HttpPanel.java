@@ -1,4 +1,4 @@
-package org.kodnuts.polyester;
+package org.kodnuts.polyester.ui;
 
 import javafx.scene.layout.Pane;
 
