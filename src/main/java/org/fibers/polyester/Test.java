@@ -1,4 +1,4 @@
-package org.kodnuts.polyester;
+package org.fibers.polyester;
 
 import groovy.lang.Binding ;
 import groovy.lang.GroovyShell ;

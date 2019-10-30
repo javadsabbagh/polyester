@@ -1,4 +1,4 @@
-package org.kodnuts.polyester;
+package org.fibers.polyester;
 
 import javax.swing.*;
 import org.fife.ui.rtextarea.*;

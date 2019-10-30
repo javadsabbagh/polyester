@@ -1,21 +1,14 @@
-package org.kodnuts.polyester;
+package org.fibers.polyester;
 
 import javafx.application.Application;
 import javafx.scene.Scene;
 import javafx.scene.control.Label;
 import javafx.scene.layout.Pane;
-import javafx.scene.layout.StackPane;
 import javafx.stage.Stage;
 import javafx.embed.swing.SwingNode;
-import org.kodnuts.polyester.ui.LabelButton;
+import org.fibers.polyester.ui.LabelButton;
 
 import javax.swing.*;
-import java.net.URI;
-import java.net.http.HttpClient;
-import java.net.http.HttpHeaders;
-import java.net.http.HttpRequest;
-import java.time.Duration;
-import java.util.Optional;
 
 public class MainApplication extends Application {
 

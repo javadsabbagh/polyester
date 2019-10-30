@@ -1,4 +1,4 @@
-package org.kodnuts.polyester.protocol.http;
+package org.fibers.polyester.protocol.http;
 
 
 // todo consider category by

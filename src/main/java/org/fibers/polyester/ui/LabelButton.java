@@ -1,4 +1,4 @@
-package org.kodnuts.polyester.ui;
+package org.fibers.polyester.ui;
 
 import javafx.scene.Cursor;
 import javafx.scene.control.Label;
