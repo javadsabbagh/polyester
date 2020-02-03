@@ -12,10 +12,13 @@ import javax.swing.*;
 
 public class MainApplication extends Application {
 
+    public static void main(String[] args) {
+        launch();
+    }
+
     @Override
     public void start(Stage stage) {
-        final SwingNode swingNode = new SwingNode();
-        createSwingContent(swingNode);
+        createSwingContent();
 
         String javaVersion = System.getProperty("java.version");
         String javafxVersion = System.getProperty("javafx.version");
@@ -34,17 +37,11 @@ public class MainApplication extends Application {
         stage.show();
     }
 
-    public static void main(String[] args) {
-        launch();
-    }
+    private SwingNode createSwingContent() {
+        final SwingNode swingNode = new SwingNode();
+        swingNode.setContent(new JButton("Click me!"));
 
-    private void createSwingContent(final SwingNode swingNode) {
-        SwingUtilities.invokeLater(new Runnable() {
-            @Override
-            public void run() {
-                swingNode.setContent(new JButton("Click me!"));
-            }
-        });
+        return swingNode;
     }
 
 }
