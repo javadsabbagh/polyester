@@ -3,6 +3,8 @@ package org.fibers.polyester;
 import javafx.application.Application;
 import javafx.embed.swing.SwingNode;
 import javafx.scene.Scene;
+import javafx.scene.control.Alert;
+import javafx.scene.control.ButtonType;
 import javafx.scene.control.Label;
 import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
@@ -41,7 +43,14 @@ public class MainApplication extends Application {
         stage.show();
 
         stage.setOnCloseRequest(event -> {
-            System.exit(0);
+            Alert alert = new Alert(Alert.AlertType.CONFIRMATION, "Are you sure to exit?", ButtonType.YES, ButtonType.NO);
+            alert.showAndWait();
+
+            if (alert.getResult() == ButtonType.YES) {
+                System.exit(0);
+            } else {
+                event.consume(); // prevent closing window
+            }
         });
     }
 
